@@ -1,0 +1,3 @@
+This is the directory where license boilerplate is output to by the generateBoilerplate script.
+
+When the script generates your boilerplate, the LICENSE file will contain all you need to apply the license to your software (i.e. instructions, full-license file, and source-code file header boilerplate). Follow whatever the license's instructions in that file advise; but basically you'd copy the file to the root of your project, and pull out the header boilerplate for your source files.
