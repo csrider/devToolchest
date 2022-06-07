@@ -1,16 +1,37 @@
 ▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
 █                                                                              █
-█ FILE HEADER BOILERPLATES                                                     █
+█  FILE HEADER BOILERPLATES                                                    █
 █──────────────────────────────────────────────────────────────────────────────█
-█ This, itself, is a boilerplate you may use!                                  █
+█                                                                              █
+█  80 Column, Unicode Block-Element, Fully-enclosed, Non-escaped               █
+█                                                                              █
+█  This, itself, is a boilerplate you may use!                                 █
+█                                                                              █
 █▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂█
 █                                                                              █
-█ Copyright 2022 Chris Rider (csrider@gmail.com)                               █
+█  Copyright 2022 Chris Rider (csrider@gmail.com)                              █
 █                                                                              █
-█ This Source Code Form is subject to the terms of the Mozilla Public          █
-█ License v. 2.0. If a copy of the MPL was not distributed with this file,     █
-█ You can obtain one at http://mozilla.org/MPL/2.0/.                           █
+█  This Source Code Form is subject to the terms of the Mozilla Public License █
+█  v. 2.0. If a copy of the MPL was not distributed with this file, you can    █
+█  obtain one at http://mozilla.org/MPL/2.0/.                                  █
+█                                                                              █
 █▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅█
+
+▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+█                                                                                                                      █
+█  FILE HEADER BOILERPLATES                                                                                            █
+█──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────█
+█                                                                                                                      █
+█  120 Column, Unicode Block-Element, Fully-enclosed, Non-escaped                                                      █
+█                                                                                                                      █
+█▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂█
+█                                                                                                                      █
+█  Copyright 2022 Chris Rider (csrider@gmail.com)                                                                      █
+█                                                                                                                      █
+█  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not    █
+█  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                                      █
+█                                                                                                                      █
+█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅█
 
 
 /******************************************************************************\
@@ -30,11 +51,75 @@
 *
 *  Copyright 2022 Chris Rider (csrider@gmail.com)                               
 *
-*  This Source Code Form is subject to the terms of the Mozilla Public          
-*  License v. 2.0. If a copy of the MPL was not distributed with this file,     
-*  You can obtain one at http://mozilla.org/MPL/2.0/. 
+*  This Source Code Form is subject to the terms of the Mozilla Public License
+*  v. 2.0. If a copy of the MPL was not distributed with this file, you can
+*  obtain one at http://mozilla.org/MPL/2.0/. 
 *
 \******************************************************************************/
+
+/**********************************************************************************************************************\
+*  120 Column, C-style Multiline-comment, ASCII, Open Right Edge
+* ---------------------------------------------------------------------------------------------------------------------
+*
+*  The usual details about your code would go here.
+*  
+*  This should work on nearly all development environments (it is just ASCII, afterall) so use it whenever you're 
+*  unsure of who will be viewing your source code, or unsure of whatever environment will be used to view it.
+*  
+*  The only other catch would be for languages that don't support this multiline comment syntax, then the corners and
+*  possibly edges would need to be changed.
+* _____________________________________________________________________________________________________________________
+*
+*  Copyright 2022 Chris Rider (csrider@gmail.com)                               
+*
+*  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+*  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/. 
+*
+\**********************************************************************************************************************/
+
+
+/******************************************************************************\
+**  80 Column, C-style Multiline-comment, ASCII, Open Right Edge
+** ----------------------------------------------------------------------------
+**
+**  The usual details about your code would go here.
+**  
+**  This should work on nearly all development environments (it is just ASCII,
+**  afterall) so use it whenever you're unsure of who will be viewing your
+**  source code, or unsure of whatever environment will be used to view it.
+**  
+**  The only other catch would be for languages that don't support this
+**  multiline comment syntax, then the corners and possibly edges would need to
+**  be changed.
+** ____________________________________________________________________________
+**
+**  Copyright 2022 Chris Rider (csrider@gmail.com)
+**
+**  This Source Code Form is subject to the terms of the Mozilla Public License
+**  v. 2.0. If a copy of the MPL was not distributed with this file, you can
+**  obtain one at http://mozilla.org/MPL/2.0/. 
+**
+\******************************************************************************/
+
+/**********************************************************************************************************************\
+**  120 Column, C-style Multiline-comment, ASCII, Open Right Edge
+** --------------------------------------------------------------------------------------------------------------------
+**
+**  The usual details about your code would go here.
+**  
+**  This should work on nearly all development environments (it is just ASCII, afterall) so use it whenever you're 
+**  unsure of who will be viewing your source code, or unsure of whatever environment will be used to view it.
+**  
+**  The only other catch would be for languages that don't support this multiline comment syntax, then the corners and
+**  possibly edges would need to be changed.
+** ____________________________________________________________________________________________________________________
+**
+**  Copyright 2022 Chris Rider (csrider@gmail.com)                               
+**
+**  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+**  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/. 
+**
+\**********************************************************************************************************************/
 
 
 /*============================================================================*\
@@ -54,11 +139,31 @@
 **
 **  Copyright 2022 Chris Rider (csrider@gmail.com)                               
 **
-**  This Source Code Form is subject to the terms of the Mozilla Public          
-**  License v. 2.0. If a copy of the MPL was not distributed with this file,     
-**  You can obtain one at http://mozilla.org/MPL/2.0/. 
+**  This Source Code Form is subject to the terms of the Mozilla Public License
+**  v. 2.0. If a copy of the MPL was not distributed with this file, you can
+**  obtain one at http://mozilla.org/MPL/2.0/. 
 **
 \*============================================================================*/
+
+/*====================================================================================================================*\
+**  120 Column, C-style Multiline-comment, ASCII, Open Right Edge
+** --------------------------------------------------------------------------------------------------------------------
+**
+**  The usual details about your code would go here.
+**  
+**  This should work on nearly all development environments (it is just ASCII, afterall) so use it whenever you're 
+**  unsure of who will be viewing your source code, or unsure of whatever environment will be used to view it.
+**  
+**  The only other catch would be for languages that don't support this multiline comment syntax, then the corners and 
+**  possibly edges would need to be changed.
+** ____________________________________________________________________________________________________________________
+**
+**  Copyright 2022 Chris Rider (csrider@gmail.com)                               
+**
+**  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+**  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/. 
+**
+\*====================================================================================================================*/
 
 
 ################################################################################
@@ -74,11 +179,29 @@
 ##
 ##  Copyright 2022 Chris Rider (csrider@gmail.com)
 ##
-##  This Source Code Form is subject to the terms of the Mozilla Public
-##  License v. 2.0. If a copy of the MPL was not distributed with this file,
-##  You can obtain one at http://mozilla.org/MPL/2.0/.
+##  This Source Code Form is subject to the terms of the Mozilla Public License
+##  v. 2.0. If a copy of the MPL was not distributed with this file, you can
+##  obtain one at http://mozilla.org/MPL/2.0/.
 ##
 ################################################################################
+
+########################################################################################################################
+##
+##  120 Column, Bash Single-line-comment, ASCII, Open Right Edge
+## _____________________________________________________________________________________________________________________
+##
+##  The usual details about your code would go here.
+## 
+##  A possible down-side to this might be that it looks rather "dense."
+## 
+## =====================================================================================================================
+##
+##  Copyright 2022 Chris Rider (csrider@gmail.com)
+##
+##  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+##  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.
+##
+########################################################################################################################
 
 
 /*▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔\
@@ -101,12 +224,34 @@
 ▎ It's a very good all-around monospace font!
 ▎
 ▎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-▎ Copyright 2022 Chris Rider (csrider@gmail.com)                               
-▎                                                                              
-▎ This Source Code Form is subject to the terms of the Mozilla Public          
-▎ License v. 2.0. If a copy of the MPL was not distributed with this file,     
-▎ You can obtain one at http://mozilla.org/MPL/2.0/.   
+▎ Copyright 2022 Chris Rider (csrider@gmail.com)
+▎
+▎ This Source Code Form is subject to the terms of the Mozilla Public License,
+▎ v. 2.0. If a copy of the MPL was not distributed with this file, you can
+▎ obtain one at http://mozilla.org/MPL/2.0/.
 \▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁*/
+
+/*▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔\
+▎ 120 Column, C-style Multiline-comment, Unicode, Open Right Edge
+▎──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+▎
+▎ The usual details about your code would go here.
+▎ 
+▎ This incorporates standard multi-line comment characters EMBEDDED INTO the unicode elements of the design.
+▎ 
+▎ The down-side to this would be that some fonts might not support displaying these unicode glyphs, meaning that some 
+▎ developers may not see this the way it was intended. If you're only using this in a tightly-controlled development 
+▎ environment, then maybe that doesn't matter. Also, if this is used in a language that uses different multiline 
+▎ comment syntax, that would be trouble.
+▎ 
+▎ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!
+▎
+▎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+▎ Copyright 2022 Chris Rider (csrider@gmail.com)
+▎
+▎ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+▎ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.
+\▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁*/
 
 
 ╭──────────────────────────────────────────────────────────────────────────────╮
@@ -135,10 +280,35 @@
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ Copyright 2022 Chris Rider (csrider@gmail.com)                               │
 │                                                                              │
-│ This Source Code Form is subject to the terms of the Mozilla Public          │
-│ License v. 2.0. If a copy of the MPL was not distributed with this file,     │
-│ You can obtain one at http://mozilla.org/MPL/2.0/.                           │
+│ This Source Code Form is subject to the terms of the Mozilla Public License  │
+│ v. 2.0. If a copy of the MPL was not distributed with this file, you can     │
+│ obtain one at http://mozilla.org/MPL/2.0/.                                   │
 ╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ 120 Column, Thin Box Drawing Unicode, Rounded, Fully-enclosed, Non-escaped                                           │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                      │
+│ The usual details about your code would go here.                                                                     │
+│                                                                                                                      │
+│ One down-side to this header is that you would need to space out every single line to complete the right edge (thus  │
+│ maintaining the uniformity of the fully-enclosed box. But it looks really nice!                                      │
+│                                                                                                                      │
+│ Another down-side is that you need to wrap this in the multiline-comment syntax of whatever language you're using.   │
+│                                                                                                                      │
+│ And yet another down-side to this would be that some fonts might not support displaying these unicode glyphs,        │
+│ meaning that some developers may not see this the way it was intended. If you're only using this in a tightly-       │
+│ controlled development environment, then maybe that doesn't matter. Also, if this is used in a language that uses    │
+│ different multiline comment syntax, that would be trouble.                                                           │
+│                                                                                                                      │
+│ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!                 │
+│                                                                                                                      │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Copyright 2022 Chris Rider (csrider@gmail.com)                                                                       │
+│                                                                                                                      │
+│ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not     │
+│ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
 ╭──────────────────────────────────────────────────────────────────────────────╮
@@ -166,10 +336,34 @@
 ├──────────────────────────────────────────────────────────────────────────────
 │ Copyright 2022 Chris Rider (csrider@gmail.com)                               
 │                                                                              
-│ This Source Code Form is subject to the terms of the Mozilla Public          
-│ License v. 2.0. If a copy of the MPL was not distributed with this file,     
-│ You can obtain one at http://mozilla.org/MPL/2.0/.                           
+│ This Source Code Form is subject to the terms of the Mozilla Public License
+│ v. 2.0. If a copy of the MPL was not distributed with this file, you can
+│ obtain one at http://mozilla.org/MPL/2.0/.                           
 ╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ 120 Column, Unicode Box-Drawing (thin rounded), Open Right Side, Non-escaped
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│ 
+│ The usual details about your code would go here.
+│ 
+│ All you have to really maintain when you write stuff, is to copy and paste the vertical elements along the left edge.
+│ 
+│ One down-side is that you need to wrap this in the multiline-comment syntax of whatever language you're using.
+│ 
+│ Another down-side to this would be that some fonts might not support displaying these unicode glyphs, meaning that 
+│ some developers may not see this the way it was intended. If you're only using this in a tightly-controlled 
+│ development environment, then maybe that doesn't matter. Also, if this is used in a language that uses different 
+│ multiline comment syntax, that would be trouble.
+│ 
+│ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!
+│ 
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│ Copyright 2022 Chris Rider (csrider@gmail.com)                               
+│                                                                              
+│ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+│ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                           
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -197,10 +391,34 @@
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃ Copyright 2022 Chris Rider (csrider@gmail.com)
 ┃
-┃ This Source Code Form is subject to the terms of the Mozilla Public
-┃ License v. 2.0. If a copy of the MPL was not distributed with this file,
-┃ You can obtain one at http://mozilla.org/MPL/2.0/.
+┃ This Source Code Form is subject to the terms of the Mozilla Public License
+┃ v. 2.0. If a copy of the MPL was not distributed with this file, you can
+┃ obtain one at http://mozilla.org/MPL/2.0/.
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 120 Column, Unicode Box-Drawing (thick squared), Open Right Side, Non-escaped
+┠──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+┃
+┃ The usual details about your code would go here.
+┃ 
+┃ All you have to really maintain when you write stuff, is to copy and paste the vertical elements along the left edge.
+┃ 
+┃ One down-side is that you need to wrap this in the multiline-comment syntax of whatever language you're using.
+┃ 
+┃ Another down-side to this would be that some fonts might not support displaying these unicode glyphs, meaning that 
+┃ some developers may not see this the way it was intended. If you're only using this in a tightly-controlled 
+┃ development environment, then maybe that doesn't matter. Also, if this is used in a language that uses different 
+┃ multiline comment syntax, that would be trouble.
+┃ 
+┃ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Copyright 2022 Chris Rider (csrider@gmail.com)
+┃
+┃ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not 
+┃ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -229,10 +447,35 @@
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
 ┃ Copyright 2022 Chris Rider (csrider@gmail.com)                               ┃
 ┃                                                                              ┃
-┃ This Source Code Form is subject to the terms of the Mozilla Public          ┃
-┃ License v. 2.0. If a copy of the MPL was not distributed with this file,     ┃
-┃ You can obtain one at http://mozilla.org/MPL/2.0/.                           ┃
+┃ This Source Code Form is subject to the terms of the Mozilla Public License  ┃
+┃ v. 2.0. If a copy of the MPL was not distributed with this file, you can     ┃
+┃ obtain one at http://mozilla.org/MPL/2.0/.                                   ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 120 Column, Unicode Box-Drawing (thick squared), Fully Enclosed, Non-escaped                                         ┃
+┠──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┨
+┃                                                                                                                      ┃
+┃ The usual details about your code would go here.                                                                     ┃
+┃                                                                                                                      ┃
+┃ One down-side to this header is that you would need to space out every single line to complete the right edge (thus  ┃
+┃ maintaining the uniformity of the fully-enclosed box. But it looks really nice!                                      ┃
+┃                                                                                                                      ┃
+┃ Another down-side is that you need to wrap this in the multiline-comment syntax of whatever language you're using.   ┃
+┃                                                                                                                      ┃
+┃ And yet another down-side to this would be that some fonts might not support displaying these unicode glyphs,        ┃
+┃ meaning that some developers may not see this the way it was intended. If you're only using this in a tightly-       ┃
+┃ controlled development environment, then maybe that doesn't matter. Also, if this is used in a language that uses    ┃
+┃ different multiline comment syntax, that would be trouble.                                                           ┃
+┃                                                                                                                      ┃
+┃ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!                 ┃
+┃                                                                                                                      ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ Copyright 2022 Chris Rider (csrider@gmail.com)                                                                       ┃
+┃                                                                                                                      ┃
+┃ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not     ┃
+┃ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -261,7 +504,32 @@
 ╟──────────────────────────────────────────────────────────────────────────────╢
 ║ Copyright 2022 Chris Rider (csrider@gmail.com)                               ║
 ║                                                                              ║
-║ This Source Code Form is subject to the terms of the Mozilla Public          ║
-║ License v. 2.0. If a copy of the MPL was not distributed with this file,     ║
-║ You can obtain one at http://mozilla.org/MPL/2.0/.                           ║
+║ This Source Code Form is subject to the terms of the Mozilla Public License  ║
+║ v. 2.0. If a copy of the MPL was not distributed with this file, you can     ║
+║ obtain one at http://mozilla.org/MPL/2.0/.                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ 120 Column, Unicode Box-Drawing (double), Fully Enclosed, Non-escaped                                                ║
+╟──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
+║                                                                                                                      ║
+║ The usual details about your code would go here.                                                                     ║
+║                                                                                                                      ║
+║ One down-side to this header is that you would need to space out every single line to complete the right edge (thus  ║
+║ maintaining the uniformity of the fully-enclosed box. But it looks really nice!                                      ║
+║                                                                                                                      ║
+║ Another down-side is that you need to wrap this in the multiline-comment syntax of whatever language you're using.   ║
+║                                                                                                                      ║
+║ And yet another down-side to this would be that some fonts might not support displaying these unicode glyphs,        ║
+║ meaning that some developers may not see this the way it was intended. If you're only using this in a tightly-       ║
+║ controlled development environment, then maybe that doesn't matter. Also, if this is used in a language that uses    ║
+║ different multiline comment syntax, that would be trouble.                                                           ║
+║                                                                                                                      ║
+║ The DejaVu font family (DejaVu Sans Mono) supports this. It's a very good all-around monospace font!                 ║
+║                                                                                                                      ║
+╟──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
+║ Copyright 2022 Chris Rider (csrider@gmail.com)                                                                       ║
+║                                                                                                                      ║
+║ This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not     ║
+║ distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
