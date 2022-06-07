@@ -1,0 +1,101 @@
+▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+█                                                                                                                      █
+█  SECTION HEADERS                                                                                                     █
+█──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────█
+█                                                                                                                      █
+█  The idea is that these would usually be used in source code at the top of sections, to help you better organize     █
+█  and layout your work.                                                                                               █
+█                                                                                                                      █
+█▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂█
+█                                                                                                                      █
+█  Copyright 2022 Chris Rider (csrider@gmail.com)                                                                      █
+█                                                                                                                      █
+█  This Source Code Form is subject to the terms of the Mozilla Public License v. 2.0. If a copy of the MPL was not    █
+█  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.                                      █
+█                                                                                                                      █
+█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅█
+
+
+/**
+ * Just a standard comment Block
+ */
+
+
+/*******************************************************************************
+ * 80 Column, C-style Multiline-comment, ASCII, Open Right Edge, No Bottom Line
+ * Additional lines might go here
+ */
+
+/***********************************************************************************************************************
+* 120 Column, C-style Multiline-comment, ASCII, Open Right Edge, No Bottom Line
+* Additional lines might go here
+*/
+
+
+/******************************************************************************\
+  80 Column, C-style Multiline-comment, ASCII, Open Right Edge, Bottom Line
+  Additional lines might go here
+\.............................................................................*/
+
+/**********************************************************************************************************************\
+  120 Column, C-style Multiline-comment, ASCII, Open Right Edge, Bottom Line
+  Additional lines might go here
+\.....................................................................................................................*/
+
+
+/******************************************************************************\
+  80 Column, C-style Multiline-comment, ASCII, Open Right Edge, Bottom Line
+  Additional lines might go here
+\_____________________________________________________________________________*/
+
+/**********************************************************************************************************************\
+  120 Column, C-style Multiline-comment, ASCII, Open Right Edge, Bottom Line
+  Additional lines might go here
+\_____________________________________________________________________________________________________________________*/
+
+
+////////////////////////////////////////////////////////////////////////////////
+/// 80 Column, C-style single-line-comment, ASCII, Open Right Edge, No Bottom Line
+//  Additional lines might go here
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// 120 Column, C-style single-line-comment, ASCII, Open Right Edge, No Bottom Line
+//  Additional lines might go here
+
+
+////\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+/// 80 Column, C-style single-line-comment, ASCII, Open Right Edge, No Bottom Line
+//  Additional lines might go here
+
+////\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+/// 120 Column, C-style single-line-comment, ASCII, Open Right Edge, No Bottom Line
+//  Additional lines might go here
+
+
+################################################################################
+## 80 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+##
+
+########################################################################################################################
+## 120 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+##
+
+
+################################################################################
+##/ 80 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+#/
+
+########################################################################################################################
+##/ 120 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+#/
+
+
+################################################################################
+###/ 80 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+##/
+
+########################################################################################################################
+###/ 120 Column, Bash, ASCII, Open Right Edge, No Bottom Line
+##/
+
+
