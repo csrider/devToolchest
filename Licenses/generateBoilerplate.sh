@@ -1,24 +1,31 @@
 #!/bin/bash
-###############################################################################
-#### Interactive bash script to customize and generate license boilerplate ####
-###############################################################################
-# Usage:  ./generateBoilerplate.sh   (then just follow the prompts)
-#
-# Revisions:
-#   2022-06-06  Chris Rider   Created. First version to be basic/interactive.
-#
-# TO-DO:
-# - Input and data validation / Error checking
-# - Ability to specify a different output path and/or filename for license
-# - Read pre-defined configuration
-#
-###############################################################################
-# Copyright 2022 Chris Rider (csrider@gmail.com)
-#
-# This Source Code Form is subject to the terms of the Mozilla Public License,
-# v. 2.0. If a copy of the MPL was not distributed with this file, You can 
-# obtain one at http://mozilla.org/MPL/2.0/.
-###############################################################################
+################################################################################
+##
+##  generateBoilerplate.sh
+## _____________________________________________________________________________
+##
+##  Interactive bash script to customize and generate license boilerplate
+##
+##  Usage:
+##  $ ./generateBoilerplate.sh   (then just follow the prompts)
+##
+##  Milestones:
+##  2022-06-06  Chris Rider   Created. First version to be basic/interactive.
+##
+##  To-Do:
+##  - Input and data validation / Error checking
+##  - Ability to specify a different output path and/or filename for license
+##  - Read pre-defined configuration
+## 
+## =============================================================================
+##
+##  Copyright 2022 Chris Rider (csrider@gmail.com)
+##
+##  This Source Code Form is subject to the terms of the Mozilla Public
+##  License, v. 2.0. If a copy of the MPL was not distributed with this file,
+##  you can obtain one at http://mozilla.org/MPL/2.0/.
+##
+################################################################################
 
 ## Configure
 LICENSE_SRC_DIR="./src/licenseTemplates"
