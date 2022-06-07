@@ -1,0 +1,110 @@
+/*---------------------------------------------------------------------------*\
+  Stylesheet Title Goes Here
+
+  Everything in this file is just for example, but are conventions I like.
+
+  ___________________________________________________________________________
+  IDEA: Show the project structure  (delete this line if you are done with it!)
+  {Project Structure}
+  root
+  └ src
+    ├── styles        Base styles: Available anywhere in the app
+    ├── bs-override   Custom styles that overwrite bootstrap
+    ├── custom        Custom styles created for the application
+    ├── fonts         All the fonts the app uses
+    ├── img           Images used ONLY in stylesheets
+    ├── variables     Variables used in the custom theme
+    ├── styles.less   Imports of all the base stylesheets
+    └── components    Each component has own stylesheet to prevent style leaks
+        ├── alerts       
+            └── alert.less  Custom styles for the alert component
+  ___________________________________________________________________________
+  IDEA: If you must have a long stylesheet, you can try using an index  (delete this line if you are done with it!)
+  {Index of this Stylesheet}
+  - Color Palette
+  - Typography
+  - Buttons
+  - Forms
+  - Layout
+  - Messaging & Status
+  - General
+  - Navigation
+  - Carousel
+  - Jumbotron
+
+  ___________________________________________________________________________
+  For more best practices, see:
+  - https://webdesign.tutsplus.com/articles/css-documentation-best-practices--cms-30139
+
+
+
+     << KEEP ONE LICENSE AND DELETE THE OTHERS BELOW >>
+  ___________________________________________________________________________
+ | Copyright 2022 Chris Rider (csrider@gmail.com)                            |
+ |                                                                           |
+ | This Source Code Form is subject to the terms of the Mozilla Public       |
+ | License, v. 2.0. If a copy of the MPL was not distributed with this file, |
+ | You can obtain one at http://mozilla.org/MPL/2.0/.                        |
+ |___________________________________________________________________________|
+ | Copyright 2022 Chris Rider (csrider@gmail.com)                            |
+ |                                                                           |
+ | Licensed under the Apache License, Version 2.0 (the "License"); you may   |
+ | not use this file except in compliance with the License. You may obtain a |
+ | copy of the License at: http://www.apache.org/licenses/LICENSE-2.0        |
+ |                                                                           |
+ | Unless required by applicable law or agreed to in writing, software       |
+ | distributed under the License is distributed on an "AS IS" BASIS, WITHOUT |
+ | WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the  |
+ | License for the specific language governing permissions and limitations   |
+ | under the License.                                                        |
+ |___________________________________________________________________________|
+ | Copyright 2022 Chris Rider (csrider@gmail.com)                            |
+ |                                                                           |
+ | Licensed under the MIT License.                                           |
+\*---------------------------------------------------------------------------*/
+
+
+/*===========================================================================*\
+ * buttons.css
+ *
+ * Buttons should convey in simply & meaningfully the concept of the function
+ * they perform. When designing new buttons be sure to remove complexities 
+ * and follow the linear and lightweight appearance of the button set.
+\*---------------------------------------------------------------------------*/
+
+.btn,
+.btn-link {
+  color: #ccc;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+
+/*===========================================================================*\
+ * cards.css
+ *
+ * These are the styles for the card component.
+ *
+ * Index
+ * - Card Base
+ * - Card Grid
+ * - Card List
+ * - Card Dark
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Card Base
+ * 
+ * Defines the appearance and behavior of the default card with its main parts:
+ * - Card Image
+ * - Card Content
+ * - Card Footer
+ */
+
+.card {/*...*/}
+.card__image {/*...*/}
+.card__logo {/*...*/}
+.card__content {
+  flex: 1 1 auto;   /* "auto" needs to be explicit to avoid the div collapsing on IE.*/
+}
+.card__footer {/*...*/}
