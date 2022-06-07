@@ -1,12 +1,12 @@
-# About
+# About devToolchest 🛠
 
-This repo is where I dump all my repeated tedium... whether that be code snippets, licensing, or other stuff.
+This repo is where I dump all of my tools, scripts, boilerplate, and other repeated tedium... whether that be code snippets, licensing, automation, or other stuff. I have a ton of tools that I'll slowly be putting into this repo as I use them. If you find them useful, then enjoy.
 
-Yeah, I could've used a snippet manager or Gists (and I may someday), but a vanilla Git repo just feels so much more pure, doesn't it? 😁
+And yeah, I could've used a snippet manager or Gists for some of what's in here (and I may someday), but a vanilla Git repo of just all development tools just feels so much more pure, doesn't it? 😁
+
+---
 
 # License
-
-*And since I often like to eat my own dogfood...*
 
 Copyright 2022 Chris Rider (csrider@gmail.com)
 
