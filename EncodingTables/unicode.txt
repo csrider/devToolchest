@@ -1,42 +1,60 @@
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Unicode Characters                                                          ┃
-┠─────────────────────────────────────────────────────────────────────────────┨
-┃ Copyright 2022 Chris Rider (csrider@gmail.com)                              ┃
-┃                                                                             ┃
-┃ This Source Code Form is subject to the terms of the Mozilla Public         ┃
-┃ License v. 2.0. If a copy of the MPL was not distributed with this file,    ┃
-┃ You can obtain one at http://mozilla.org/MPL/2.0/.                          ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+█                                                                              █
+█  Unicode Character, Glyph, and Code Mappings                                 █
+█▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂█
+█                                                                              █
+█  Copyright 2022 Chris Rider (csrider@gmail.com)                              █
+█                                                                              █
+█  This Source Code Form is subject to the terms of the Mozilla Public         █
+█  License v. 2.0. If a copy of the MPL was not distributed with this file,    █
+█  You can obtain one at http://mozilla.org/MPL/2.0/.                          █
+█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅█
 
-┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
-│ Box Elements                                                                │
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Box Elements                                                                ┃
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
-        0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
-U+250x  ─  ━  │  ┃  ┄  ┅  ┆  ┇  ┈  ┉  ┊  ┋  ┌  ┍  ┎  ┏
-U+251x  ┐  ┑  ┒  ┓  └  ┕  ┖  ┗  ┘  ┙  ┚  ┛  ├  ┝  ┞  ┟
-U+252x  ┠  ┡  ┢  ┣  ┤  ┥  ┦  ┧  ┨  ┩  ┪  ┫  ┬  ┭  ┮  ┯
-U+253x  ┰  ┱  ┲  ┳  ┴  ┵  ┶  ┷  ┸  ┹  ┺  ┻  ┼  ┽  ┾  ┿
-U+254x  ╀  ╁  ╂  ╃  ╄  ╅  ╆  ╇  ╈  ╉  ╊  ╋  ╌  ╍  ╎  ╏
-U+255x  ═  ║  ╒  ╓  ╔  ╕  ╖  ╗  ╘  ╙  ╚  ╛  ╜  ╝  ╞  ╟
-U+256x  ╠  ╡  ╢  ╣  ╤  ╥  ╦  ╧  ╨  ╩  ╪  ╫  ╬  ╭  ╮  ╯
-U+257x  ╰  ╱  ╲  ╳  ╴  ╵  ╶  ╷  ╸  ╹  ╺  ╻  ╼  ╽  ╾  ╿
+				0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+
+U+250x	─	━	│	┃	┄	┅	┆	┇	┈	┉	┊	┋	┌	┍	┎	┏
+
+U+251x	┐	┑	┒	┓	└	┕	┖	┗	┘	┙	┚	┛	├	┝	┞	┟
+
+U+252x	┠	┡	┢	┣	┤	┥	┦	┧	┨	┩	┪	┫	┬	┭	┮	┯
+
+U+253x	┰	┱	┲	┳	┴	┵	┶	┷	┸	┹	┺	┻	┼	┽	┾	┿
+
+U+254x	╀	╁	╂	╃	╄	╅	╆	╇	╈	╉	╊	╋	╌	╍	╎	╏
+
+U+255x	═	║	╒	╓	╔	╕	╖	╗	╘	╙	╚	╛	╜	╝	╞	╟
+
+U+256x	╠	╡	╢	╣	╤	╥	╦	╧	╨	╩	╪	╫	╬	╭	╮	╯
+
+U+257x	╰	╱	╲	╳	╴	╵	╶	╷	╸	╹	╺	╻	╼	╽	╾	╿
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │ Block Elements                                                              │
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 				0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+
 U+258x	▀	▁	▂	▃	▄	▅	▆	▇	█	▉	▊	▋	▌	▍	▎	▏
+
 U+259x	▐	░	▒	▓	▔	▕	▖	▗	▘	▙	▚	▛	▜	▝	▞	▟
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │ Geometric Shapes                                                            │
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 				0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
-U+25Ax	■	□	▢	▣	▤	▥	▦	▧	▨	▩	▪	▫	▬	▭	▮	▯
-U+25Bx	▰	▱	▲	△	▴	▵	▶	▷	▸	▹	►	▻	▼	▽	▾	▿
+
+U+25Ax	■ □	▢	▣	▤	▥	▦	▧	▨	▩	▪	▫	▬	▭	▮	▯
+
+U+25Bx	▰ ▱	▲	△	▴	▵	▶	▷	▸	▹	►	▻	▼	▽	▾	▿
+
 U+25Cx	◀	◁	◂	◃	◄	◅	◆	◇	◈	◉	◊	○	◌	◍	◎	●
+
 U+25Dx	◐	◑	◒	◓	◔	◕	◖	◗	◘	◙	◚	◛	◜	◝	◞	◟
+
 U+25Ex	◠	◡	◢	◣	◤	◥	◦	◧	◨	◩	◪	◫	◬	◭	◮	◯
+
 U+25Fx	◰	◱	◲	◳	◴	◵	◶	◷	◸	◹	◺	◻	◼	◽	◾	◿
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
@@ -96,7 +114,7 @@ U+2732	✲	  Open center asterisk
 U+2733	✳	  Eight spoked asterisk
 U+2734	✴	  Eight pointed black star
 U+2735	✵	  Eight pointed pinwheel star
-U+2736	✶	 Six pointed black star
+U+2736	✶		Six pointed black star
 U+2737	✷	  Eight pointed rectilinear black star
 U+2738	✸	  Heavy eight pointed rectilinear black star
 U+2739	✹	  Twelve pointed black star
@@ -117,7 +135,7 @@ U+2747	❇	  Sparkle
 U+2748	❈	  Heavy sparkle
 U+2749	❉	  Balloon spoked asterisk
 U+274A	❊	  Eight teardrop spoked propeller asterisk
-U+274B	❋	  Heavy eight teardrop spoked propeller asterisk
+U+274B	❋		Heavy eight teardrop spoked propeller asterisk
 U+274C	❌	 Cross mark
 U+274D	❍	  Shadowed white circle
 U+274E	❎	 Negative squared cross mark
@@ -160,7 +178,7 @@ U+2771	❱	  Heavy right-pointing angle bracket ornament
 U+2772	❲	  Light left tortoise shell bracket ornament
 U+2773	❳	  Light right tortoise shell bracket ornament
 U+2774	❴	  Medium left curly bracket ornament
-U+2775	❵	  Medium left curly bracket ornament
+U+2775	❵		Medium left curly bracket ornament
 U+2776	❶	  Dingbat negative circled digit one
 U+2777	❷	  Dingbat negative circled digit two
 U+2778	❸	  Dingbat negative circled digit three
