@@ -1,0 +1,20 @@
+{
+  "name": "devtoolchest",
+  "version": "1.0.0",
+  "description": "This repo is where I dump all of my tools, scripts, boilerplate, and other repeated tedium... whether that be code snippets, licensing, automation, or other stuff. I have a ton of tools that I'll slowly be putting into this repo as I use them. If you find them useful, then enjoy.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csrider/devToolchest.git"
+  },
+  "author": "Chris Rider",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/csrider/devToolchest/issues"
+  },
+  "homepage": "https://github.com/csrider/devToolchest#readme"
+}
