@@ -1,33 +1,32 @@
 /**********************************************************************************************************************\
- *  BinarySearchTree class
+ *  BinSearchTree class
  * --------------------------------------------------------------------------------------------------------------------
- *  JavaScript implementation of a Binary Search Tree.
+ *  My JavaScript implementation of a Binary Search Tree.
  * 
  *  A binary search tree is a binary tree in which nodes that have lesser values are stored on the left,
  *  while nodes that have higher values are stored at the right.
  * 
- *  Methods:
- *    
+ *  METHODS:
+ *  {BinSearchTreeNode}         insert      ({number})
+ *  {BinSearchTreeNode}|{null}  remove      ({number})
+ *  {BinSearchTreeNode}|{null}  findMinNode ([{BinSearchTreeNode}])
+ *  {BinSearchTreeNode}|{null}  getRootNode ()
+ *  {undefined}                 inorder     ({BinSearchTreeNode}, [{array[number]}])
+ *  {undefined}                 preorder    ({BinSearchTreeNode}, [{array[number]}])
+ *  {undefined}                 postorder   ({BinSearchTreeNode}, [{array[number]}])
+ *  {number}                    levelorder  ({BinSearchTreeNode}, [{array[number]}], [{array[BinSearchTreeNode]}])
+ *  {BinSearchTreeNode}|{null}  search      ({BinSearchTreeNode}, {number})
  * 
- *  Usage Example:
- *    // Create the tree
- *        const bst = new BinarySearchTree();
- *        bst.insert(15);            15
- *        bst.insert(25);           /  \
- *        bst.insert(10);         10    25
- *        bst.insert(7);          /\    /\
- *        bst.insert(22);        7 13  22 27
- *        bst.insert(17);       /\    /
- *        bst.insert(13);      5  9  17
- *        bst.insert(5);
- *        bst.insert(9);
- *        bst.insert(27);
- *    // Get root node of the tree
- *        let root = bst.getRootNode();
- *    // In-rder traversal of the tree
- *        let arrNodePath = [];
- *        bst.inorder(root, arrNodePath);   //arrNodePath: [5,7,9,10,13,15,17,22,25,27]
- *        bst.inorder(root);                //console: 5 7 9 10 13 15 17 22 25 27
+ *  USAGE EXAMPLES:
+ *  const BinSearchTree = require("./BinSearchTree"); // Import this class and its dependencies
+ *  const bst = new BinSearchTree();                  // Create a binary search tree   
+ *  bst.insert(3);                                    // Populate the tree with a node containing data value 3      3   
+ *  bst.insert(2);                                    // Populate the tree with a node containing data value 2     / \  
+ *  bst.insert(1);                                    // Populate the tree with a node containing data value 1    1   2 
+ *  let root = bst.getRootNode();                     // Get the root node of the tree
+ *  let arrPath = []; bst.inorder(root, arrPath);     // In-order traversal (arrPath will be populated as: [1,2,3])
+ *  let arrPath = []; bst.preorder(root, arrPath);    // Pre-order traversal (arrPath will be populated as: [3,1,2])
+ *  let arrPath = []; bst.postorder(root, arrPath);   // Post-order traversal (arrPath will be populated as: [1,2,3])
  * ____________________________________________________________________________________________________________________
  *
  *  Copyright 2022 Chris Rider (csrider@gmail.com)                               
@@ -36,10 +35,10 @@
  *  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/. 
  *
 \**********************************************************************************************************************/
-const BinarySearchTreeNode = require('./BinarySearchTreeNode');
+const BinSearchTreeNode = require('./BinSearchTreeNode');
 
-class BinarySearchTree extends BinarySearchTreeNode {
-  /** Construst a BinarySearchTree.
+class BinSearchTree extends BinSearchTreeNode {
+  /** Construst a BinSearchTree.
    */
   constructor() {
     super();
@@ -49,17 +48,17 @@ class BinarySearchTree extends BinarySearchTreeNode {
 
   /** Creates a new node with the provided data, and then inserts it in the tree.
    * @param {number} data Numerical data to create a node for and insert into the tree.
-   * @returns {BinarySearchTreeNode} Node that was inserted for which the data was created.
+   * @returns {BinSearchTreeNode} Node that was inserted for which the data was created.
    */
   insert(data) {
     // Create a node and initialize it with the data...
-    const newNode = new BinarySearchTreeNode(data);
+    const newNode = new BinSearchTreeNode(data);
 
     // If the tree's root is null, then this new node will become the root...
     if (this.root === null) this.root = newNode;
     
     // Else, find the correct position in the tree and add the new node...
-    else this.insertNode(this.root, newNode);
+    else this.#insertNode(this.root, newNode);
 
     // Update the size of the tree
     this.size++;
@@ -68,29 +67,29 @@ class BinarySearchTree extends BinarySearchTreeNode {
   }
 
   /** Insert a node in a tree. Traverses the tree to find the location to insert.
-   * @param {BinarySearchTreeNode} node Existing node where to insert the new node.
-   * @param {BinarySearchTreeNode} newNode New node to insert into the tree.
+   * @param {BinSearchTreeNode} node Existing node where to insert the new node.
+   * @param {BinSearchTreeNode} newNode New node to insert into the tree.
    */
-  insertNode(node, newNode) {
+  #insertNode(node, newNode) {
     // If the new node's data is less-than the existing node's data, move to left...
     if (newNode.data < node.data) {
       if (node.left === null) node.left = newNode;    //if left child is null, insert new node here
-      else this.insertNode(node.left, newNode);       //else recurse until null is found
+      else this.#insertNode(node.left, newNode);      //else recurse until null is found
     }
     // Else the new node's data is greater-than the existing node's data, move to right...
     else {
       if (node.right === null) node.right = newNode;  //if right child is null, insert new node here
-      else this.insertNode(node.right, newNode);      //else recurse until null is found
+      else this.#insertNode(node.right, newNode);     //else recurse until null is found
     }
   }
 
   /** Remove a node containing the given data.
    * @param {number} data The data to find and remove from the tree.
-   * @returns {BinarySearchTreeNode|null} The tree's root node (or null if tree is empty).
+   * @returns {BinSearchTreeNode|null} The tree's root node (or null if tree is empty).
    */
   remove(data) {
     // Root is reinitialized with root of a modified tree
-    this.root = this.removeNode(this.root, data);
+    this.root = this.#removeNode(this.root, data);
 
     // Update the size of the tree
     if (this.size > 0) this.size--;
@@ -99,23 +98,23 @@ class BinarySearchTree extends BinarySearchTreeNode {
   }
 
   /** Remove the node containing the given data, starting the search for it at given node.
-   * @param {BinarySearchTreeNode} node The node at which to begin the search for given data to delete.
+   * @param {BinSearchTreeNode} node The node at which to begin the search for given data to delete.
    * @param {number} data The data to search for and delete.
-   * @returns {BinarySearchTreeNode|null} The tree's root node after any node is removed (or null if nothing removed).
+   * @returns {BinSearchTreeNode|null} The tree's root node after any node is removed (or null if nothing removed).
    */
-  removeNode(node, data) {
+  #removeNode(node, data) {
     // If the root is null, then tree is empty
     if (node === null) return null;
 
     // If data to be deleted is less-than root's data, then move to left subtree
     else if (data < node.data) {
-      node.left = this.removeNode(node.left, data);
+      node.left = this.#removeNode(node.left, data);
       return node;
     }
 
     // If data to be deleted is greater-than root's data, then move to right subtree
     else if (data > node.data) {
-      node.right = this.removeNode(node.right, data);
+      node.right = this.#removeNode(node.right, data);
       return node;
     }
 
@@ -154,60 +153,62 @@ class BinarySearchTree extends BinarySearchTreeNode {
   }
 
   /** Find the minimum node in the tree, starting search from given node.
-   * @param {BinarySearchTreeNode} node Node at which to begin the search.
-   * @returns {BinarySearchTreeNode|null} The node found (or null if not found).
+   * @param {BinSearchTreeNode} [node] (optional) Node at which to begin the search, if other than root node.
+   * @returns {BinSearchTreeNode|null} The node found (or null if not found).
    */
   findMinNode(node) {
+    if (node === undefined) node = this.getRootNode();
+    if (node === null) return null;
     // If node's left child is null, then it must be a minimum node
     if (node.left === null) return node;
     else return this.findMinNode(node.left);
   }
 
   /** Returns the root node of the tree.
-   * @returns {BinarySearchTreeNode|null} The root node of the tree (or null if tree is empty).
+   * @returns {BinSearchTreeNode|null} The root node of the tree (or null if tree is empty).
    */
   getRootNode() {
     return this.root;
   }
 
   /** Performs an in-order traversal of the tree (work is done as we descend to children).
-   * @param {BinarySearchTreeNode} node Node at which to begin traversal.
+   * @param {BinSearchTreeNode} node Node at which to begin traversal.
    * @param {array} [arrPath] (optional) Array to save the data in the traversal path to.
    */
   inorder(node, arrPath) {
     if (node !== null) {
       this.inorder(node.left, arrPath);
-      if (typeof arrPath !== 'undefined') arrPath.push(node.data);
+      if (arrPath !== undefined) arrPath.push(node.data);
       this.inorder(node.right, arrPath);
     }
   }
 
   /** Performs a pre-order traversal of the tree (work is done before descending to children).
-   * @param {BinarySearchTreeNode} node Node at which to begin traversal.
+   * @param {BinSearchTreeNode} node Node at which to begin traversal.
    * @param {array} [arrPath] (optional) Array to save the data in the traversal path to.
    */
   preorder(node, arrPath) {
     if (node !== null) {
-      if (typeof arrPath !== 'undefined') arrPath.push(node.data);
+      if (arrPath !== undefined) arrPath.push(node.data);
       this.preorder(node.left, arrPath);
       this.preorder(node.right, arrPath);
     }
   }
 
   /** Performs a post-order traversal of the tree (work is done after descending to children).
-   * @param {BinarySearchTreeNode} node Node at which to begin traversal.
+   * @param {BinSearchTreeNode} node Node at which to begin traversal.
    * @param {array} [arrPath] (optional) Array to save the data in the traversal path to.
    */
   postorder(node, arrPath) {
     if (node !== null) {
       this.postorder(node.left, arrPath);
       this.postorder(node.right, arrPath);
-      if (typeof arrPath !== 'undefined') arrPath.push(node.data);
+      if (arrPath !== undefined) arrPath.push(node.data);
     }
   }
 
   /** Performs a level-order traversal (BFS) of the tree.
-   * @param {BinarySearchTreeNode} node Node at which to begin traversal.
+   * @param {BinSearchTreeNode} node Node at which to begin traversal.
    * @param {array} [arrPath] (optional) Array to save the data in the traversal path to.
    * @param {array} [arrLevelsNodes] (optional) Array to save each level's nodes (as their own nested arrays) to.
    * @returns {number} Number of levels counted in the tree.
@@ -224,7 +225,7 @@ class BinarySearchTree extends BinarySearchTreeNode {
         // For each of this level's nodes...
         for (let i = 0; i < levelSize; i++) {
           let curr = queue.shift();
-          if (typeof arrPath !== 'undefined') arrPath.push(curr.data);
+          if (arrPath !== undefined) arrPath.push(curr.data);
           levelNodes.push(curr);
           if (curr.left !== null) queue.push(curr.left);    //add next level (children) to the queue
           if (curr.right !== null) queue.push(curr.right);  //add next level (children) to the queue
@@ -239,9 +240,9 @@ class BinarySearchTree extends BinarySearchTreeNode {
   }
 
   /** Search for the node containing the data, from the node given.
-   * @param {BinarySearchTreeNode} node Node at which to begin the search.
+   * @param {BinSearchTreeNode} node Node at which to begin the search.
    * @param {number} data Data to search the tree for.
-   * @returns {BinarySearchTreeNode|null} The node at which data was found (or null if not found).
+   * @returns {BinSearchTreeNode|null} The node at which data was found (or null if not found).
    */
   search(node, data) {
     // If tree is empty, return null
@@ -258,4 +259,4 @@ class BinarySearchTree extends BinarySearchTreeNode {
   }
 }
 
-module.exports = BinarySearchTree;
+module.exports = BinSearchTree;

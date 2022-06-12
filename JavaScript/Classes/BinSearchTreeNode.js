@@ -1,7 +1,7 @@
 /**********************************************************************************************************************\
- *  BinarySearchTreeNode class
+ *  BinSearchTreeNode class
  * --------------------------------------------------------------------------------------------------------------------
- *  JavaScript implementation of a Binary Search Tree Node (with numerical data).
+ *  JavaScript implementation of a Binary Search Tree Node (with storage for numerical data).
  * 
  *  A binary search tree is a binary tree in which nodes that have lesser values are stored on the left,
  *  while nodes that have higher values are stored at the right.
@@ -16,9 +16,9 @@
  *
 \**********************************************************************************************************************/
 
-class BinarySearchTreeNode {
-  /**
-   * Construct a BinarySearchTreeNode containing the specified numerical data.
+class BinSearchTreeNode {
+  /** Construct a BinSearchTreeNode containing the specified numerical data.
+   * TODO: Upgrade to support other lexicographical data types that can be compared.
    * @param {number} data 
    */
   constructor(data) {
@@ -28,4 +28,4 @@ class BinarySearchTreeNode {
   }
 }
 
-module.exports = BinarySearchTreeNode;
+module.exports = BinSearchTreeNode;

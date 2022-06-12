@@ -1,7 +1,7 @@
 /**********************************************************************************************************************\
- *  BinarySearchTree tests
+ *  BinSearchTree tests
  * --------------------------------------------------------------------------------------------------------------------
- *  Jest test cases for BinarySearchTree and BinarySearchTreeNode classes.
+ *  Jest tests for BinSearchTree and BinSearchTreeNode classes.
  * ____________________________________________________________________________________________________________________
  *
  *  Copyright 2022 Chris Rider (csrider@gmail.com)                               
@@ -10,12 +10,13 @@
  *  distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/. 
  *
 \**********************************************************************************************************************/
-const BinarySearchTree = require("./BinarySearchTree");
+const BinSearchTree = require("./BinSearchTree");   // This, in turn, depends on ./BinSearchTreeNode.js
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\\
 /// GENERATE TREES AND POPULATE THEM WITH DATA
 //|
-//| Index:
+//| INDEX:
 //|   createTree10     Create and return a tree of data: [15,25,10,7,22,17,13,5,9,27]
 //|   createTree3_a    Create and return a tree of data: [2,1,3]
 //|   createTree3_b    Create and return a tree of data: [2,3,1]
@@ -24,14 +25,14 @@ const BinarySearchTree = require("./BinarySearchTree");
 //|___________________________________________________________________________________________________________________//
 
 function createTree10() {
-  const tree = new BinarySearchTree();
-  tree.insert(15);        //         15
-  tree.insert(25);        //        /  \
-  tree.insert(10);        //      10    25
-  tree.insert(7);         //      /\    /\
-  tree.insert(22);        //     7 13  22 27
-  tree.insert(17);        //    /\    /
-  tree.insert(13);        //   5  9  17
+  const tree = new BinSearchTree();
+  tree.insert(15);        //        15
+  tree.insert(25);        //       /  \
+  tree.insert(10);        //     10    25
+  tree.insert(7);         //     /\    /\
+  tree.insert(22);        //    7 13  22 27
+  tree.insert(17);        //   /\    /
+  tree.insert(13);        //  5  9  17
   tree.insert(5);
   tree.insert(9);
   tree.insert(27);
@@ -39,7 +40,7 @@ function createTree10() {
 }
 
 function createTree3_a() {
-  const tree = new BinarySearchTree();
+  const tree = new BinSearchTree();
   tree.insert(2);         //    2
   tree.insert(1);         //   / \
   tree.insert(3);         //  1   3
@@ -47,7 +48,7 @@ function createTree3_a() {
 }
 
 function createTree3_b() {
-  const tree = new BinarySearchTree();
+  const tree = new BinSearchTree();
   tree.insert(2);         //    2
   tree.insert(3);         //   / \
   tree.insert(1);         //  1   3
@@ -55,7 +56,7 @@ function createTree3_b() {
 }
 
 function createTree3_c() {
-  const tree = new BinarySearchTree();
+  const tree = new BinSearchTree();
   tree.insert(3);         //    3
   tree.insert(2);         //   / \
   tree.insert(1);         //  2   1
@@ -63,18 +64,18 @@ function createTree3_c() {
 }
 
 function createTree3_d() {
-  const tree = new BinarySearchTree();
+  const tree = new BinSearchTree();
   tree.insert(1);         //    1
   tree.insert(2);         //   / \
   tree.insert(3);         //  2   3
   return tree;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
-///===================================================================================================================\
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\\
 //| MISC. HELPER FUNCTIONS
 //|
-//| Index:
+//| INDEX:
 //|   getRandomIntegerWithinRange     Generate a random integer within a given range.
 //|___________________________________________________________________________________________________________________//
 
@@ -84,11 +85,11 @@ function getRandomIntegerWithinRange(min, max) {
 }
 let randomData = getRandomIntegerWithinRange(1000, 1999);  //Init, but you may reassign this as desired before tests!
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
-///===================================================================================================================\
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\\
 //| TEST ROUTINES
 //|
-//| Index:
+//| INDEX:
 //|   #1    Create tree (createTree10), and get correct root node [15]
 //|   #2    Create tree (createTree10), and tree size is 10
 //|   #3    Create tree (createTree10), add data lower than anything else [1], and tree size is 11
