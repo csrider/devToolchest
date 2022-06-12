@@ -29,6 +29,10 @@
  * @returns {boolean} Whether the test passed or not.
  */
 export default function test(fn, arrInput, expected) {
+  // Configure
+  const maxLogLength_inputArg = 40;
+  
+  // Constants
   const COLOR_RED = "\x1b[31m";
   const COLOR_GREEN = "\x1b[32m";
   const COLOR_RESET = "\x1b[0m";
@@ -37,23 +41,57 @@ export default function test(fn, arrInput, expected) {
 
   let ret = undefined;
   let output = "";
-  const outputTestParams = `${fn.name}(${[...arrInput]})`;
+  let outputTestParams = `${fn.name}(`
+  for (let i = 0; i < arrInput.length; i++) {
+    const arg = arrInput[i];
+    let argOutput;
+
+    // Present various data types nicely
+    if (Array.isArray(arg)) argOutput = `[${[...arg]}]`;
+    else if (typeof arg === 'object') argOutput = `{${[...Object.entries(arg)]}}`;
+    else if (typeof arg === 'string') argOutput = `"${arg}"`;
+    else if (typeof arg === 'number') argOutput = `${arg}`;
+    else if (typeof arg === 'function') argOutput = `fn:${arg}`;
+    else {
+      argOutput = `${arg}`;
+      //console.log(`test(): Unhandled arrInput element data type (${typeof arg}). Logging as default.`);
+    }
+
+    // Truncate middle portion if will be too long to look nice
+    if (argOutput.length > maxLogLength_inputArg) {
+      const separator = '...';
+      const charsToShow = maxLogLength_inputArg - separator.length;
+      const numFrontChars = Math.ceil(charsToShow/2);
+      const numBackChars = Math.floor(charsToShow/2);
+      const truncOutFront = argOutput.substring(0, numFrontChars);
+      const truncOutBack = argOutput.substring(argOutput.length - numBackChars);
+      const truncatedOutput = truncOutFront + separator + truncOutBack;
+      argOutput = truncatedOutput;
+    }
+
+    // If more input parameters coming, delineate them nicely
+    if (i !== arrInput.length - 1) argOutput += ', ';
+
+    outputTestParams += argOutput;
+  }
+  outputTestParams += ')';
   const markStart = "mark_start", markEnd = "mark_end";
 
   performance.mark(markStart);
   const r = fn(...arrInput);
-  performance.mark(markEnd);
-  const perfMeasure = performance.measure(`Measure: ${fn.name}([${[...arrInput]}])`, markStart, markEnd);
+  //performance.mark(markEnd);
+  //const perfMeasure = performance.measure(`Measure: ${fn.name}([${[...arrInput]}])`, markStart, markEnd);
+  const perfMeasure = performance.measure(`Measure: ${fn.name}([${[...arrInput]}])`, markStart);
   const perfDuration = perfMeasure.duration.toFixed(3).toString() + "ms";
   performance.clearMarks;
   performance.clearMeasures;
   
   if (r == expected) {
     ret = true;
-    output += `${COLOR_GREEN}${EMOJI_PASS} PASSED TEST (${perfDuration}):${COLOR_RESET} ${outputTestParams}`;
+    output += `${COLOR_GREEN}${EMOJI_PASS} PASSED TEST (${perfDuration}):\t${COLOR_RESET} ${outputTestParams}`;
   } else {
     ret = false;
-    output += `${COLOR_RED}${EMOJI_FAIL} FAILED TEST (${perfDuration}):${COLOR_RESET} ${outputTestParams}\n`;
+    output += `${COLOR_RED}${EMOJI_FAIL} FAILED TEST (${perfDuration}):\t${COLOR_RESET} ${outputTestParams}\n`;
     output += `   ${COLOR_RED}Got "${r}"(${typeof r}). Expected "${expected}"(${typeof expected})${COLOR_RESET}`;
   }
 
