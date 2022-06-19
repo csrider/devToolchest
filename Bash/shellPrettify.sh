@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ########################################################################################################################
 ##
 ##  shellPrettify.sh
@@ -154,8 +154,7 @@ spBorderLeft="│"
 spEnd="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCodeReset_all}${spCtrlChar_end}"
 
 # Text Styles
-spBright="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCode_bright}${spCtrlChar_end}"
-spBold="${spBegBRIGHT}"
+spBold="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCode_bright}${spCtrlChar_end}"
 spDim="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCode_italic}${spCtrlChar_end}"
 spItalic="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCode_italic}${spCtrlChar_end}"
 spUnderline="${spCtrlChar_esc}${spCtrlChar_begin}${spFmtCode_underline}${spCtrlChar_end}"
