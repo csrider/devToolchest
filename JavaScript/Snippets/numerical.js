@@ -12,6 +12,7 @@
  *    PARSING             Tools for parsing and extracting digits and parts.
  *    CONVERSION          Tools for converting in various ways.
  *    MANIPULATION        Tools for modifying and manipulating numbers.
+ *    CALCULATION         Tools for calculating things of various nature.
  *    LAB & EXPERIMENTS   Experimental/playing-around kind of stuff.
  * ____________________________________________________________________________________________________________________
  *
@@ -232,6 +233,30 @@ test(intToStr, [16, 2], "10000");
 //|____________________________________________________________________________________________________________________/
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
+///~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+//| CALCULATION
+//|   Tools for calculating things of various nature.
+//|
+//| Index:
+//|
+//|____________________________________________________________________________________________________________________/
+
+/** 
+ * Linear Interpolation function
+ * Calculates in the following manner:
+ *  - When t is 0, the "(B-A)*t" part is 0, so you only have A
+ *  - When t is 1, the "-A" (in parentheses) cancels out the first A, so you only have B
+ *  - When t is between 0 and 1, you're left with half the difference between A and B
+ * Useful for example, in knowing where to draw lane markings on a road, given N number of lanes.
+ * @param {number} A Value #1 or minimum range
+ * @param {number} B Value #2 or maximum range
+ * @param {number} t Percentage
+ * @returns {number} 
+ */
+function lerp(A, B, t) {
+  return A + (B - A) * t;
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\
