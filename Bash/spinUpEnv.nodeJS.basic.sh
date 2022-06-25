@@ -11,6 +11,7 @@
 ##
 ##  HISTORY:
 ##    2022-06-19    Chris Rider     Created initial version.
+##    2022-06-25    Chris Rider     Added ability to include Express (and soon others); Refactoring to be all-inclusive.
 ##
 ##  TODO:
 ##    Options for libraries (Nodemon, React, Typescript, Axios, Restify, Moleculer, )
