@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 ########################################################################################################################
 ##
-##  spinUpEnv.nodeJS.basic.sh
+##  spinUpEnv.nodeJS.sh
 ## _____________________________________________________________________________________________________________________
 ##
-##  A bash script to automate creation of a basic Node.JS environment.
+##  A bash script to wizardize creation of a Node.JS environment.
 ##
 ##  USAGE:
-##    ./spinUpEnv.nodeJS.basic.sh
+##    ./spinUpEnv.nodeJS.sh
 ##
 ##  HISTORY:
 ##    2022-06-19    Chris Rider     Created initial version.
@@ -248,6 +248,15 @@ function handleInitNodeJS() {
         spinnerOff
     fi
 
+    # Download and install TypeScript compiler if desired
+    if [[ $promptUseTypescript =~ ^[Yy]$ ]]; then
+        printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
+            "$statusLine" "Downloading and installing TypeScript compiler"
+        spinnerOn & SPINNER_PROCESS=$!
+        npm install --save-dev typescript >/dev/null 2>&1
+        spinnerOff
+    fi
+
     # Modify package.json as needed
     if [ ! "$(command -v npe)" ]; then
         printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
@@ -356,6 +365,9 @@ printf " ${spBold}${spLtBlue}%s$spEnd  " \
 printf " ${spBold}${spLtBlue}%s$spEnd  " \
     "       Init Local Git Repo? (y/n) ⭢"
     read -n 1 -r promptInitGit;  printf "\n"
+printf " ${spBold}${spLtBlue}%s$spEnd  " \
+    "            Use TypeScript? (y/n) ⭢"
+    read -n 1 -r promptUseTypescript;  printf "\n"
 printf " ${spBold}${spLtBlue}%s$spEnd  " \
     "               Use Express? (y/n) ⭢"
     read -n 1 -r promptUseExpress;  printf "\n"
