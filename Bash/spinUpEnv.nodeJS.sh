@@ -33,7 +33,7 @@
 ##/
 
 #SCRIPT_FILENAME=`echo "$0" | cut -d '/' -f 2`
-SCRIPT_FILENAME="spinUpEnv.nodeJS.basic.sh"
+SCRIPT_FILENAME="spinUpEnv.nodeJS.sh"
 CURRENT_PATH=`pwd`
 DEFAULT_PROJ_PATH="/home/chris/Development"
 
