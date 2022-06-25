@@ -13,6 +13,7 @@
 ##    2022-06-19    Chris Rider     Created initial version.
 ##
 ##  TODO:
+##    Options for libraries (Nodemon, React, Typescript, Axios, Restify, Moleculer, )
 ##    Anything commented out below!
 ##    Implement automated unit testing
 ## 
@@ -237,16 +238,25 @@ function handleInitNodeJS() {
     npm install --save-dev jest >/dev/null 2>&1    #ensure jest is only in dev-dependencies
     spinnerOff
 
+    # Download and install Express if desired
+    if [[ $promptUseExpress =~ ^[Yy]$ ]]; then
+        printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
+            "$statusLine" "Downloading and installing Express"
+        spinnerOn & SPINNER_PROCESS=$!
+        npm install express >/dev/null 2>&1
+        spinnerOff
+    fi
+
     # Modify package.json as needed
     if [ ! "$(command -v npe)" ]; then
         printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-            "$statusLine" "Downloading and installing npe"
+            "$statusLine" "Downloading and installing npe globally (to edit node configuration)"
         spinnerOn & SPINNER_PROCESS=$!
-        npm install -g npe >/dev/null 2>&1          #ensure npe is installed (to easily edit package.json)
+        npm install -g npe >/dev/null 2>&1  #ensure npe is installed on system (to easily edit package.json)
         spinnerOff
     fi
     printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-        "$statusLine" "Downloading and installing npe"
+        "$statusLine" "Configuring package"
     spinnerOn & SPINNER_PROCESS=$!
     npe scripts.test jest >/dev/null 2>&1
     spinnerOff
@@ -345,6 +355,9 @@ printf " ${spBold}${spLtBlue}%s$spEnd  " \
 printf " ${spBold}${spLtBlue}%s$spEnd  " \
     "       Init Local Git Repo? (y/n) ⭢"
     read -n 1 -r promptInitGit;  printf "\n"
+printf " ${spBold}${spLtBlue}%s$spEnd  " \
+    "               Use Express? (y/n) ⭢"
+    read -n 1 -r promptUseExpress;  printf "\n"
 #printf "  $spBold%s$spEnd" "Init Github Repo? (y/n):  ";  read -n 1 -r promptInitGithub;  printf "\n"
 #printf "  $spBold%s$spEnd" "Open Codium After? (y/n): ";  read -n 1 -r promptOpenCodium;  printf "\n"
 
