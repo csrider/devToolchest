@@ -232,19 +232,40 @@ function handleInitNodeJS() {
     npm init -y >/dev/null 2>&1
     spinnerOff
 
+    # Setup Node package editor command that we'll need to easily update the config
+    if [ ! "$(command -v npe)" ]; then
+        printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
+            "$statusLine" "Downloading and installing npe globally (to edit node configuration)"
+        spinnerOn & SPINNER_PROCESS=$!
+        npm install -g npe >/dev/null 2>&1  #ensure npe is installed on system (to easily edit package.json)
+        spinnerOff
+    fi
+
     # Download and install jest testing modules
     printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-        "$statusLine" "Downloading and installing jest (always unit-test!)"
+        "$statusLine" "Downloading, installing, and configuring Jest"
     spinnerOn & SPINNER_PROCESS=$!
-    npm install --save-dev jest >/dev/null 2>&1    #ensure jest is only in dev-dependencies
+    npm install --save-dev jest >/dev/null 2>&1     #ensure jest is only in dev-dependencies
+    npe scripts.test jest >/dev/null 2>&1           #setup package.json to use jest
     spinnerOff
 
     # Download and install Express if desired
     if [[ $promptUseExpress =~ ^[Yy]$ ]]; then
         printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-            "$statusLine" "Downloading and installing Express"
+            "$statusLine" "Downloading, installing, and configuring Express"
         spinnerOn & SPINNER_PROCESS=$!
         npm install express >/dev/null 2>&1
+        printf "%s\n%s\n%s\n\n%s\n%s\n%s\n\n%s\n%s\n%s\n" \
+            "const express = require('express');" \
+            "const app = express();" \
+            "const port = 3000;" \
+            "app.get('/', (req, res) => {" \
+            "  res.send('Express/Node is running.');" \
+            "});" \
+            "app.listen(port, () => {" \
+            "  console.log('Express/Node is running on port ' + port);" \
+            "});" \
+            > express.js  
         spinnerOff
     fi
 
@@ -256,20 +277,6 @@ function handleInitNodeJS() {
         npm install --save-dev typescript >/dev/null 2>&1
         spinnerOff
     fi
-
-    # Modify package.json as needed
-    if [ ! "$(command -v npe)" ]; then
-        printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-            "$statusLine" "Downloading and installing npe globally (to edit node configuration)"
-        spinnerOn & SPINNER_PROCESS=$!
-        npm install -g npe >/dev/null 2>&1  #ensure npe is installed on system (to easily edit package.json)
-        spinnerOff
-    fi
-    printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
-        "$statusLine" "Configuring package"
-    spinnerOn & SPINNER_PROCESS=$!
-    npe scripts.test jest >/dev/null 2>&1
-    spinnerOff
 
     # Create initial starter/test files
     printf "${REWRITE_LINE} ${spBold}${spLtYellow}%s$spEnd $spItalic%s$spEnd" \
@@ -388,6 +395,7 @@ handleInitNodeJS                #init Node.JS
 
 # Inform completion
 echo
-printf " $spBold%s$spEnd\n ($spItalic%s$spEnd)\n\n" \
+printf " $spBold%s$spEnd\n $spItalic%s$spEnd\n $spItalic%s$spEnd\n\n" \
     "Setup complete!" \
-    "Be sure to update the $projFullDir/package.json file if you desire."
+    "(be sure to update the $projFullDir/package.json file if you desire)" \
+    "(if you installed Express, you can start it with 'node express.js' and access it on port 3000)"
